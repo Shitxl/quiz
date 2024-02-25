@@ -1,0 +1,183 @@
+
+
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.bg-gradient{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(120deg, #12147b,#812981);
+}
+
+
+
+
+.result-box{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background:#64c9e2;
+    border: 4px solid #d2c2cd;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.result-box h2{
+    font-size: 52px;
+    color: black;
+
+    
+}
+.result-box h4{
+    font-size: 15px;
+    color: black;
+}
+
+.result-box .percentage-container{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 40px;
+    color: black;
+}
+
+.percentage-container .circular-progress{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(#950170 3.6deg, rgba(255, 255, 255, .1) 0deg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.percentage-container .circular-progress::before{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    background:#e2aded;
+    border-radius: 50%;
+}
+
+.circular-progress .progress-value{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.percentage-container .score-text{
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.result-box .buttons{
+    display: flex;
+}
+
+.buttons button{
+    width: 130px;
+    height: 47px;
+    background: #c40094;
+    border: 2px solid #c40094;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0 20px 20px;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+
+.buttons button:nth-child(1):hover{
+    background: #950170;
+    border-color: #950170;
+}
+
+
+.buttons button:nth-child(2) {
+    background: transparent;
+    color: #c40094
+}
+
+.buttons button:nth-child(2):hover {
+    background: #c40094;
+    color: #fff;
+}
+
+.img1{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    background-image: url('Bulb.png');
+    background-size: cover;
+    position: fixed;
+    right: 100px;
+    top:60px;
+    transform: rotate(20deg);
+}
+.img2{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    background-image: url('Phone.png');
+    background: position 300px;
+    background-size: cover;
+    position: fixed;
+    right: 100px;
+    bottom:100px;
+    transform: rotate(20deg);
+}
+
+.img3{
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    background-image: url('Time.png');
+    background-size: cover;
+    position: fixed;
+    left: 80px;
+    bottom: 100px;
+    transform: rotate(20deg);
+}
+
+.img4{
+    width: 330px;
+    height: 330px;
+    display: inline-block;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    background-image: url('Magnifying\ Glass.png');
+    background-size: cover;
+    background: position 300px;
+    position: fixed;
+    left: 100px;
+    top:20px;
+    transform: rotate(-30deg);
+}
